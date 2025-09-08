@@ -1,0 +1,22 @@
+
+
+.lead__title {
+  color: #ffffff;
+  font-family: "Inter";
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 100px;
+}
+
+.lead__description {
+  color: #ffffff;
+  font-family: "inter";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.lead__image {
+  width: 984px;
+  height: 615px;
+}
