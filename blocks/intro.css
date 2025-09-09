@@ -1,5 +1,5 @@
-.intro{
-    text-align: left;
+.intro {
+  text-align: left;
 }
 
 .intro__title {
@@ -7,7 +7,8 @@
   font-family: "inter";
   font-weight: 900;
   font-size: 54px;
-  line-height: 58px;
+  line-height: 1.07;
+  max-width: 830px;
 }
 
 .intro__quote {
@@ -15,7 +16,8 @@
   font-family: "inter";
   font-weight: 400;
   font-size: 24px;
-  line-height: 34px;
+  line-height: 1.42;
+  max-width: 738px;
 }
 
 .intro__autor {
@@ -23,7 +25,9 @@
   font-family: "inter";
   font-weight: 400;
   font-size: 24px;
-  line-height: 34px;
+  line-height: 1.42;
+  text-align: end;
+  max-width: 738px;
 }
 
 .intro__text {
@@ -31,5 +35,34 @@
   font-family: "inter";
   font-weight: 400;
   font-size: 16px;
-  line-height: 163%;
+  line-height: 1.62;
+  max-width: 722px;
+}
+
+@media (max-width: 1024px) {
+  .intro {
+    max-width: 100%;
+    padding: 0 24px;
+  }
+
+  .intro__title {
+    font-size: 45px;
+    line-height: 1.09;
+  }
+}
+
+@media (max-width: 544px) {
+  .intro {
+    padding: 0 16px;
+  }
+
+  .intro__title {
+    font-size: 32px;
+    line-height: 1.09;
+  }
+
+  .intro__quote {
+    font-size: 24px;
+    line-height: 1.25;
+  }
 }
