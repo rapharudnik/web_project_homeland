@@ -29,9 +29,12 @@
 
 .places__image {
   width: 100%;
+  height: 100%;
   grid-area: image;
   transition: box-shadow 0.3s ease;
   opacity: 1;
+  object-fit: cover;
+  display: block;
 }
 
 .places__image:hover {
@@ -98,15 +101,10 @@
 
 @media (max-width: 1024px) {
   .place {
-    padding-top: 88px;
+    margin-top: 88px;
     max-width: 720px;
     grid-template-columns: 1fr 355px;
     grid-template-rows: auto auto 1fr;
-    grid-template-areas:
-      "title website"
-      "image text"
-      "frame text"
-      ". text";
   }
 
   .places__title {
@@ -127,6 +125,7 @@
 
 @media (max-width: 544px) {
   .place {
+    margin-top: 0;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, auto);
     grid-template-areas:
@@ -143,17 +142,22 @@
 
   .places__title {
     font-size: 32px;
-    padding-left: 16px;
-    padding-right: 16px;
+    margin: 0 16px;
+
     line-height: 35px;
   }
 
   .places__frame {
-    font-size: 17px;
-    line-height: 17px;
-    display: flex; /* usa flexbox */
-    justify-content: center; /* centraliza horizontalmente */
-    align-items: center; /* centraliza verticalmente */
+    font-size: 14px;
+    line-height: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 16px 50px;
+    padding: 0 16px;
+    width: auto;
+    max-width: none;
+    white-space: nowrap;
   }
 
   .places__website {
